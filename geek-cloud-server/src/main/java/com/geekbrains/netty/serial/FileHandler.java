@@ -5,7 +5,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -34,7 +33,6 @@ public class FileHandler extends SimpleChannelInboundHandler<CloudMessage> {
             String selected = listRequest.getSelectedItem();
 
             Path path = Paths.get(serverDir + "/" + selected).normalize();
-
 
             if(path.toFile().isDirectory()){
                 if(path != stop){
