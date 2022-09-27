@@ -5,4 +5,5 @@ public enum MessageType {
     FILE_REQUEST,
     FILE,
     UPDATE_SERVER_VIEW
+
 }

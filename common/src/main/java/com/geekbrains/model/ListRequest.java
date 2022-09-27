@@ -15,4 +15,5 @@ public class ListRequest implements CloudMessage{
     public MessageType getType() {
         return MessageType.UPDATE_SERVER_VIEW;
     }
+
 }
